@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './parent.component.css'
 })
 export class ParentComponent {
+szam1: number = 0;
+szam2: number = 0;
+result: number = 0;
 
+updateResult(result: number){
+  this.result = result
+}
 }

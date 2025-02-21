@@ -1,1 +1,6 @@
 <p>parent works!</p>
+<label for="">Számolás</label>
+<input type="number" [(ngModel)]="szam1">
+<input type="number" [(ngModel)]="szam2">
+<app-child [szam1]="szam1" [szam2]="szam2" (result)="updateResult($event)"></app-child>
+<p>Eredmény: {{result}}</p>
